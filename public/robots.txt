@@ -1,0 +1,16 @@
+# وكالة الجزيرة ترافيل — robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://aljazeera-travel.ma/sitemap.xml
+
+# Crawl-delay for polite bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block low-value params if any appear later
+Disallow: /*?*utm_source=
