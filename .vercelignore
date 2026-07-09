@@ -1,6 +1,5 @@
 node_modules
 dist
-.vercel
+.git
 .vscode
-.DS_Store
 *.log
