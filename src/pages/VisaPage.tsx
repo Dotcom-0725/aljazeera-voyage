@@ -1,11 +1,17 @@
-import { FileCheck2, ScrollText } from "lucide-react";
+import { FileCheck2, Globe2, Info, ScrollText } from "lucide-react";
 import {
   SEO_PAGES,
   buildBreadcrumbSchema,
   buildFaqSchema,
   buildOrganizationSchema,
 } from "../data/seo";
-import { IMAGES, VISA_SERVICES, whatsappLink } from "../data/site";
+import {
+  IMAGES,
+  VISA_CATEGORIES,
+  VISA_NOTE,
+  VISA_SERVICES,
+  whatsappLink,
+} from "../data/site";
 import { useSeo, trackWhatsAppClick } from "../hooks/useSeo";
 import { PageHero } from "../components/shared/PageHero";
 import { SectionHeader } from "../components/shared/SectionHeader";
@@ -14,6 +20,7 @@ import { InternalLinks } from "../components/shared/InternalLinks";
 import { Accordion } from "../components/ui/accordion";
 import { Button } from "../components/ui/button";
 import { Card } from "../components/ui/card";
+import { WhatsAppButton } from "../components/shared/WhatsAppButton";
 
 const visaFaq = [
   {
@@ -23,6 +30,10 @@ const visaFaq = [
   {
     q: "هل تضمنون قبول التأشيرة؟",
     a: "لا يمكن ضمان القبول 100%، لكن تجهيز ملف مرتب يرفع فرص القبول بشكل كبير.",
+  },
+  {
+    q: "هل تصدر الوكالة التأشيرة مباشرة؟",
+    a: "لا، دورنا هو المساعدة في الإجراءات وتجهيز الملف، أما قرار منح التأشيرة فيعود إلى الجهات المختصة. وتختلف الوثائق والآجال والشروط حسب الدولة ونوع التأشيرة.",
   },
   {
     q: "ما الوجهات الأكثر طلبًا؟",
@@ -60,9 +71,49 @@ export default function VisaPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="خدماتنا"
-            title="تأشيرات العمرة والسياحة من طنجة"
-            subtitle="من العمرة إلى الوجهات السياحية الأشهر — دعم واضح وشخصي."
+            title="خدمات التأشيرات"
+            subtitle="نساعدكم في إجراءات تأشيرات العمرة وتأشيرات الدول العربية ودول الخليج العربي."
           />
+
+          <div className="mb-6 grid gap-6 md:grid-cols-2">
+            {VISA_CATEGORIES.map((cat, i) => (
+              <Card key={cat.id} className="flex flex-col p-6 md:p-8">
+                <div className="mb-4 flex items-center gap-3">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-gradient text-gold-light shadow-emerald">
+                    {i === 0 ? <ScrollText className="h-5 w-5" /> : <Globe2 className="h-5 w-5" />}
+                  </div>
+                  <h3 className="font-display text-xl font-bold text-emerald-deep md:text-2xl">
+                    {cat.title}
+                  </h3>
+                </div>
+                <ul className="space-y-3">
+                  {cat.items.map((item) => (
+                    <li key={item} className="flex items-start gap-3 rounded-2xl bg-muted px-4 py-3 text-sm leading-7 text-foreground">
+                      <span className="mt-2.5 h-2 w-2 shrink-0 rotate-45 bg-gold" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-auto pt-6">
+                  <WhatsAppButton
+                    message={cat.message}
+                    label="استفسر عن التأشيرة"
+                    track={`visa_${cat.id}`}
+                    block
+                  />
+                </div>
+              </Card>
+            ))}
+          </div>
+
+          <p className="mb-14 flex items-start gap-2.5 rounded-2xl border border-gold/25 bg-gold-pale/60 px-4 py-3 text-sm leading-7 text-muted-foreground">
+            <Info className="mt-1 h-4 w-4 shrink-0 text-gold" />
+            <span>{VISA_NOTE}</span>
+          </p>
+
+          <h3 className="mb-6 text-center font-display text-2xl font-bold text-emerald-deep">
+            استشارات وخدمات أخرى
+          </h3>
 
           <div className="grid gap-6 lg:grid-cols-12">
             <div className="grid gap-4 sm:grid-cols-2 lg:col-span-8">

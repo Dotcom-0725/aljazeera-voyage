@@ -23,6 +23,9 @@ import { SectionHeader } from "../components/shared/SectionHeader";
 import { Card } from "../components/ui/card";
 import { DESTINATIONS } from "../data/destinations";
 import { OptimizedImage } from "../components/shared/OptimizedImage";
+import { MoroccoDestinations } from "../components/tours/MoroccoDestinations";
+import { Button } from "../components/ui/button";
+import { ArrowLeft } from "lucide-react";
 
 export default function HomePage() {
   useSeo({
@@ -40,6 +43,17 @@ export default function HomePage() {
       <HomeServices />
       <HomeWhyUs />
       <HomeFeaturedUmrah />
+
+      <MoroccoDestinations limit={4} id="home-morocco" className="py-16 md:py-20">
+        <div className="mt-10 text-center">
+          <Link to="/tours?section=morocco">
+            <Button variant="outline">
+              اكتشف الوجهات السياحية
+              <ArrowLeft className="h-4 w-4" />
+            </Button>
+          </Link>
+        </div>
+      </MoroccoDestinations>
 
       {/* Destination SEO landing links */}
       <section className="bg-luxury py-16 md:py-20" aria-labelledby="destinations-title">

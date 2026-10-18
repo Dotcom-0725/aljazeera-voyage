@@ -7,6 +7,7 @@ import {
 import { IMAGES, TOUR_PACKAGES } from "../data/site";
 import { DESTINATIONS } from "../data/destinations";
 import { useSeo } from "../hooks/useSeo";
+import { useSectionParam } from "../hooks/useSectionParam";
 import { PageHero } from "../components/shared/PageHero";
 import { SectionHeader } from "../components/shared/SectionHeader";
 import { PackageCard } from "../components/shared/PackageCard";
@@ -15,8 +16,12 @@ import { InternalLinks } from "../components/shared/InternalLinks";
 import { Badge } from "../components/ui/badge";
 import { Card } from "../components/ui/card";
 import { OptimizedImage } from "../components/shared/OptimizedImage";
+import { MoroccoDestinations } from "../components/tours/MoroccoDestinations";
+
+const SECTION_IDS = ["morocco"];
 
 export default function ToursPage() {
+  useSectionParam(SECTION_IDS);
   useSeo({
     ...SEO_PAGES.tours,
     schemas: [
@@ -32,8 +37,8 @@ export default function ToursPage() {
     <>
       <PageHero
         badge="رحلات سياحية من المغرب"
-        title="رحلات تركيا ودبي وباريس من طنجة"
-        subtitle="وجهات عالمية وبرامج مرنة تناسب العائلات والمسافرين الباحثين عن تجربة راقية."
+        title="رحلات سياحية داخل المغرب وخارجه"
+        subtitle="اكتشفوا أجمل الوجهات المغربية، إلى جانب وجهات عالمية ببرامج مرنة تناسب العائلات والمسافرين."
         image={IMAGES.tangier}
         breadcrumbs={[
           { label: "الرئيسية", to: "/" },
@@ -41,10 +46,12 @@ export default function ToursPage() {
         ]}
       />
 
-      <section className="bg-luxury py-20 md:py-28">
+      <MoroccoDestinations />
+
+      <section className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            badge="صفحات الوجهات"
+            badge="وجهات خارج المغرب"
             title="هبوط عالي التحويل لكل وجهة"
             subtitle="صفحات مُحسّنة لكلمات: رحلات تركيا من المغرب ورحلات دبي من المغرب."
           />

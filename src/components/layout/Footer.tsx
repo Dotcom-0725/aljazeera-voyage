@@ -84,6 +84,21 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/umrah?section=ramadan" className="hover:text-gold-light">
+                  برامج العمرة في رمضان
+                </Link>
+              </li>
+              <li>
+                <Link to="/umrah?section=prices" className="hover:text-gold-light">
+                  أسعار برامج العمرة
+                </Link>
+              </li>
+              <li>
+                <Link to="/tours?section=morocco" className="hover:text-gold-light">
+                  رحلات سياحية داخل المغرب
+                </Link>
+              </li>
+              <li>
                 <Link to="/hajj" className="hover:text-gold-light">
                   الحج المغرب
                 </Link>
@@ -105,7 +120,7 @@ export function Footer() {
               </li>
               <li>
                 <Link to="/visa" className="hover:text-gold-light">
-                  استخراج التأشيرات طنجة
+                  خدمات التأشيرات
                 </Link>
               </li>
               <li>
