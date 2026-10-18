@@ -46,7 +46,7 @@ export default function BlogPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="محتوى يحوّل الزوار إلى عملاء"
-            title="من مدونة الجزيرة ترافيل"
+            title="من مدونة مرشد الطواف"
             subtitle="كل مقال يربط داخليًا بصفحات الخدمات والوجهات لرفع الترتيب والتحويل."
           />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

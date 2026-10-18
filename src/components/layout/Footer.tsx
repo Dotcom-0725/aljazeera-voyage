@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import { NAV_LINKS, SITE, whatsappLink } from "../../data/site";
 import { Button } from "../ui/button";
 
@@ -36,16 +36,17 @@ export function Footer() {
           <div>
             <div className="mb-4 flex items-center gap-3">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-gold/30">
-                <span className="font-display text-xl font-bold text-gold-light">ج</span>
+                <img src="/logo-mark.png" alt={SITE.shortName} width={40} height={34} className="h-9 w-auto" />
               </div>
               <div>
                 <div className="font-extrabold">{SITE.name}</div>
-                <div className="text-xs text-gold-light/80">
-                  {SITE.city} · {SITE.country}
+                <div className="text-xs tracking-wider text-gold-light/80" dir="ltr">
+                  {SITE.nameFr}
                 </div>
               </div>
             </div>
             <p className="text-sm leading-7 text-white/70">{SITE.description}</p>
+            <p className="mt-3 text-sm font-semibold leading-7 text-gold-light/90">{SITE.slogan}</p>
             <a
               href={whatsappLink()}
               target="_blank"
@@ -120,20 +121,24 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-white/70">
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-[18px] w-[18px] shrink-0 text-gold-light" />
-                {SITE.address}
+                <span>
+                  {SITE.address}
+                  <span className="mt-1 block text-xs leading-6 text-white/55">{SITE.addressDetail}</span>
+                </span>
               </li>
               <li className="flex items-start gap-2.5">
                 <Phone className="mt-0.5 h-[18px] w-[18px] shrink-0 text-gold-light" />
-                <a href={`tel:+${SITE.phoneIntl}`} className="hover:text-gold-light">
-                  {SITE.phoneDisplay}
-                </a>
-              </li>
-              <li className="flex items-start gap-2.5">
-                <Mail className="mt-0.5 h-[18px] w-[18px] shrink-0 text-gold-light" />
-                {SITE.email}
+                <span className="flex flex-col gap-1">
+                  <a href={`tel:+${SITE.phoneIntl}`} className="hover:text-gold-light" dir="ltr">
+                    {SITE.phoneDisplay}
+                  </a>
+                  <a href={`tel:+${SITE.phone2Intl}`} className="hover:text-gold-light" dir="ltr">
+                    {SITE.phone2Display}
+                  </a>
+                </span>
               </li>
               <li className="text-white/60">
-                المسؤول: <span className="text-white/85">{SITE.contactPerson}</span>
+                المسؤول: <span className="text-white/85">{SITE.contactTitle} {SITE.contactPerson}</span>
               </li>
             </ul>
 
@@ -161,7 +166,7 @@ export function Footer() {
           <p>
             © {new Date().getFullYear()} {SITE.name}. جميع الحقوق محفوظة.
           </p>
-          <p className="text-white/40">دوار النجمة، طنجة · تصميم فاخر لتجربة سفر راقية</p>
+          <p className="text-white/40" dir="ltr">{SITE.nameFr} · {SITE.city}</p>
         </div>
       </div>
     </footer>

@@ -52,7 +52,7 @@ export function Navbar() {
               !solid && "ring-1 ring-white/25"
             )}
           >
-            <span className="font-display text-lg font-bold text-gold-light">ج</span>
+            <img src="/logo-mark.png" alt={SITE.shortName} width={36} height={31} className="h-8 w-auto" />
             <span className="absolute -bottom-0.5 -left-0.5 h-2.5 w-2.5 rounded-full bg-gold shadow-gold" />
           </div>
           <div className="leading-tight">
@@ -62,15 +62,17 @@ export function Navbar() {
                 solid ? "text-foreground" : "text-white"
               )}
             >
-              {SITE.name}
+              {SITE.shortName}
+              <span className="hidden lg:inline"> للأسفار والسياحة والحج والعمرة</span>
             </div>
             <div
               className={cn(
-                "text-[11px] font-medium transition-colors",
+                "text-[11px] font-medium tracking-wider transition-colors",
                 solid ? "text-gold" : "text-gold-light/90"
               )}
+              dir="ltr"
             >
-              طنجة · العمرة · الحج · السياحة
+              {SITE.nameFr}
             </div>
           </div>
         </Link>

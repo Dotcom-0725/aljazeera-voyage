@@ -4,7 +4,7 @@ import { Button } from "../components/ui/button";
 
 export default function NotFoundPage() {
   useSeo({
-    title: "الصفحة غير موجودة | وكالة الجزيرة ترافيل",
+    title: "الصفحة غير موجودة | وكالة مرشد الطواف للأسفار",
     description: "عذرًا، الصفحة التي تبحث عنها غير متوفرة. عد إلى الرئيسية أو تواصل معنا عبر واتساب.",
     keywords: "وكالة أسفار طنجة",
     path: "/404",

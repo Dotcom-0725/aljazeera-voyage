@@ -17,7 +17,7 @@ export function HomeFAQ() {
           subtitle="محتوى مُحسّن لمقتطفات Google الغنية (FAQ rich results) حول العمرة والحج والطيران والتأشيرات."
         />
         <h2 id="faq-heading" className="sr-only">
-          الأسئلة الشائعة حول وكالة الجزيرة ترافيل بطنجة
+          الأسئلة الشائعة حول وكالة مرشد الطواف للأسفار بطنجة
         </h2>
         <Accordion items={FAQ_ITEMS} />
       </div>

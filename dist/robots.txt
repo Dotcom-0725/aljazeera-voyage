@@ -1,9 +1,9 @@
-# وكالة الجزيرة ترافيل — robots.txt
+# وكالة مرشد الطواف للأسفار — robots.txt
 User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://aljazeera-travel.ma/sitemap.xml
+Sitemap: https://aljazeera-voyage.vercel.app/sitemap.xml
 
 # Crawl-delay for polite bots
 User-agent: Googlebot

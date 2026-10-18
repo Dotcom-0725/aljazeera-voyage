@@ -53,7 +53,7 @@ export default function DestinationPage() {
           ],
         }
       : {
-          title: "وجهة غير موجودة | وكالة الجزيرة ترافيل",
+          title: "وجهة غير موجودة | وكالة مرشد الطواف للأسفار",
           description: "الوجهة المطلوبة غير متوفرة.",
           keywords: "",
           path: "/tours",

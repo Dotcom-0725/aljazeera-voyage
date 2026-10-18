@@ -1,7 +1,6 @@
 import { FormEvent, useState } from "react";
 import {
   Clock3,
-  Mail,
   MapPin,
   MessageCircle,
   Phone,
@@ -55,8 +54,8 @@ export default function ContactPage() {
     <>
       <PageHero
         badge="وكالة أسفار طنجة"
-        title="اتصل بنا — دوار النجمة، طنجة"
-        subtitle="زورونا أو راسلوا السيد محمد عثمان على واتساب 0671872273 للحصول على عرض فوري."
+        title="اتصل بنا — البرانص 2، طنجة"
+        subtitle="زورونا أو تواصلوا مع الأستاذ محمد عثمان بروحو الحجام على 0671872273 أو 0614385559 للحصول على عرض فوري."
         image={IMAGES.about}
         breadcrumbs={[
           { label: "الرئيسية", to: "/" },
@@ -68,7 +67,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             badge="معلومات NAP للسيو المحلي"
-            title="تواصل مع وكالة الجزيرة ترافيل"
+            title={`تواصل مع ${SITE.name}`}
             subtitle="اسم · عنوان · هاتف متطابق عبر الموقع والخرائط لتعزيز Local SEO."
           />
 
@@ -79,19 +78,26 @@ export default function ContactPage() {
                   icon: MapPin,
                   title: "العنوان",
                   value: SITE.address,
-                  detail: "NAP: دوار النجمة، طنجة، المغرب",
+                  detail: SITE.addressDetail,
                 },
                 {
                   icon: Phone,
-                  title: "الهاتف / واتساب",
+                  title: "الهاتف الأول / واتساب",
                   value: SITE.phoneDisplay,
                   detail: `+${SITE.phoneIntl}`,
                   href: `tel:+${SITE.phoneIntl}`,
                 },
                 {
+                  icon: Phone,
+                  title: "الهاتف الثاني",
+                  value: SITE.phone2Display,
+                  detail: `+${SITE.phone2Intl}`,
+                  href: `tel:+${SITE.phone2Intl}`,
+                },
+                {
                   icon: UserRound,
                   title: "المسؤول",
-                  value: SITE.contactPerson,
+                  value: `${SITE.contactTitle} ${SITE.contactPerson}`,
                   detail: "متابعة شخصية للحجوزات والاستشارات",
                 },
                 {
@@ -99,12 +105,6 @@ export default function ContactPage() {
                   title: "أوقات العمل",
                   value: SITE.workingHours.weekdays,
                   detail: `${SITE.workingHours.friday} · ${SITE.workingHours.sunday}`,
-                },
-                {
-                  icon: Mail,
-                  title: "البريد الإلكتروني",
-                  value: SITE.email,
-                  detail: "نرد خلال 24 ساعة عمل",
                 },
               ].map((item) => (
                 <Card key={item.title} className="flex gap-4 p-5">
@@ -120,7 +120,7 @@ export default function ContactPage() {
                         href={item.href}
                         className="mt-1 block font-extrabold text-emerald-deep hover:text-primary"
                       >
-                        {item.value}
+                        <span dir="ltr">{item.value}</span>
                       </a>
                     ) : (
                       <div className="mt-1 font-extrabold text-emerald-deep">
@@ -128,7 +128,7 @@ export default function ContactPage() {
                       </div>
                     )}
                     <div className="mt-1 text-sm text-muted-foreground">
-                      {item.detail}
+                      {item.href ? <span dir="ltr">{item.detail}</span> : item.detail}
                     </div>
                   </div>
                 </Card>
@@ -218,10 +218,11 @@ export default function ContactPage() {
                     موقعنا على Google Maps
                   </h2>
                   <p className="mt-1 text-sm text-muted-foreground">{SITE.address}</p>
+                  <p className="mt-1 text-xs text-muted-foreground">{SITE.addressDetail}</p>
                 </div>
                 <div className="aspect-[16/11] w-full bg-muted">
                   <iframe
-                    title="خريطة وكالة الجزيرة ترافيل - دوار النجمة طنجة"
+                    title="خريطة وكالة مرشد الطواف للأسفار - البرانص 2، طنجة"
                     src={SITE.mapsEmbed}
                     className="h-full w-full border-0"
                     loading="lazy"

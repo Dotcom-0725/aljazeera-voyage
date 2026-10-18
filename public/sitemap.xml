@@ -3,115 +3,115 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://aljazeera-travel.ma/</loc>
+    <loc>https://aljazeera-voyage.vercel.app/</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/about</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/about</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/umrah</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/umrah</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/hajj</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/hajj</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/tours</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/tours</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/destinations/turkey</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/destinations/turkey</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/destinations/dubai</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/destinations/dubai</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/destinations/paris</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/destinations/paris</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/destinations/medina</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/destinations/medina</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/flights</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/flights</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/visa</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/visa</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/blog</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/blog</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/blog/umrah-guide-moroccans</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/blog/umrah-guide-moroccans</loc>
     <lastmod>2026-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/blog/hajj-package-family</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/blog/hajj-package-family</loc>
     <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/blog/turkey-from-morocco</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/blog/turkey-from-morocco</loc>
     <lastmod>2026-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/blog/dubai-family-trip</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/blog/dubai-family-trip</loc>
     <lastmod>2026-02-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/blog/visa-tips-morocco</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/blog/visa-tips-morocco</loc>
     <lastmod>2026-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/blog/travel-tips-tangier</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/blog/travel-tips-tangier</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aljazeera-travel.ma/#/contact</loc>
+    <loc>https://aljazeera-voyage.vercel.app/#/contact</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

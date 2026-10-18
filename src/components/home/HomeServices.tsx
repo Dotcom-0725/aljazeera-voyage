@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
+  BedDouble,
   Building2,
+  Bus,
   Globe2,
   MoonStar,
   Plane,
@@ -18,6 +20,8 @@ const icons = {
   globe: Globe2,
   plane: Plane,
   passport: ScrollText,
+  hotel: BedDouble,
+  bus: Bus,
 } as const;
 
 export function HomeServices() {

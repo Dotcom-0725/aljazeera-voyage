@@ -12,7 +12,7 @@ export function HomeHero() {
       <div className="absolute inset-0">
         <img
           src={IMAGES.hero}
-          alt="وكالة عمرة طنجة — الكعبة المشرفة والحجاج مع وكالة الجزيرة ترافيل"
+          alt="وكالة عمرة طنجة — الكعبة المشرفة والحجاج مع وكالة مرشد الطواف للأسفار"
           className="h-full w-full object-cover animate-slow-zoom"
           width={1800}
           height={1000}

@@ -1,0 +1,102 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700;800&family=Cinzel:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+:root{--em:#064e3b;--gold:#c9a227}
+*{box-sizing:border-box;margin:0}
+body{background:#f4f1e8;font-family:Cairo,sans-serif;color:#0a1612}
+svg{direction:ltr;max-width:100%;height:auto;display:block}
+.top{text-align:center;padding:56px 40px 8px}
+.top h1{font-family:Amiri,serif;font-size:46px;color:var(--em)}
+.top .fr{font-family:Cinzel,serif;letter-spacing:5px;color:#a8841c;font-size:18px;margin-top:6px}
+.top p{color:#5b6b64;font-size:20px;margin-top:14px}
+.tile{border-radius:26px;display:flex;align-items:center;justify-content:center}
+.light{background:#fff;box-shadow:0 12px 34px rgba(6,78,59,.10)}
+.dark{background:radial-gradient(120% 120% at 70% 0%,#0b6b51 0%,#064e3b 45%,#042f22 100%)}
+.num{display:inline-flex;align-items:center;gap:12px;font-weight:800;color:var(--em);font-size:24px}
+.num b{display:inline-flex;width:46px;height:46px;border-radius:50%;background:var(--em);color:#e8d48b;align-items:center;justify-content:center;font-size:24px}
+.num small{font-family:Cinzel,serif;font-size:15px;letter-spacing:2px;color:#a8841c;font-weight:700}
+.big svg{width:100%;height:100%}
+.foot{text-align:center;color:#8a958f;font-size:16px;padding:10px 0 40px} body{width:1920px}</style></head><body><svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="g-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3e3a1"/>
+      <stop offset=".45" stop-color="#d9b44a"/>
+      <stop offset="1" stop-color="#a8841c"/>
+    </linearGradient>
+    <linearGradient id="g-em" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d7a5c"/>
+      <stop offset="1" stop-color="#053d2e"/>
+    </linearGradient>
+
+    <!-- Kaaba cube with gold kiswa band -->
+    <g id="kaaba">
+      <polygon points="100,72 128,86 100,100 72,86" fill="#1f2b27"/>
+      <polygon points="72,86 100,100 100,132 72,118" fill="#0b1210"/>
+      <polygon points="100,100 128,86 128,118 100,132" fill="#141d1a"/>
+      <polygon points="72,92 100,106 100,111 72,97" fill="url(#g-gold)"/>
+      <polygon points="100,106 128,92 128,97 100,111" fill="url(#g-gold)"/>
+      <polygon points="110,112 118,108 118,121 110,125" fill="url(#g-gold)" opacity=".9"/>
+    </g>
+
+    <!-- Tawaf orbit: back half (drawn behind) and front half with arrow -->
+    <g id="orbit-back">
+      <path d="M52,120 A48,16 0 0 1 148,120" fill="none" stroke="url(#g-gold)" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+    </g>
+    <g id="orbit-front">
+      <path d="M52,120 A48,16 0 0 0 140,128" fill="none" stroke="url(#g-gold)" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M133,122 L146,125 L137,135" fill="none" stroke="url(#g-gold)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Concept 1 emblem: 8-point star + kaaba + orbit -->
+    <g id="emblem">
+      <polygon points="100,12 188,100 100,188 12,100" fill="url(#g-em)"/>
+      <rect x="38" y="38" width="124" height="124" fill="url(#g-em)"/>
+      <polygon points="100,12 188,100 100,188 12,100" fill="none" stroke="url(#g-gold)" stroke-width="3"/>
+      <rect x="38" y="38" width="124" height="124" fill="none" stroke="url(#g-gold)" stroke-width="3"/>
+      <circle cx="100" cy="100" r="66" fill="none" stroke="url(#g-gold)" stroke-width="1" opacity=".45"/>
+      <use href="#orbit-back"/>
+      <use href="#kaaba"/>
+      <use href="#orbit-front"/>
+      <!-- crescent above -->
+      <path d="M100,40 a11,11 0 1 0 9,17 a9,9 0 1 1 -9,-17z" fill="url(#g-gold)"/>
+    </g>
+  </defs>
+</svg>
+  <div class="big" style="padding:48px 56px 56px">
+    <div class="num" style="margin-bottom:26px"><b>3</b><span>الختم الدائري</span><small>Sceau rond</small></div>
+    <div style="display:grid;grid-template-columns:1.25fr 1fr;gap:32px">
+      <div class="tile light" style="height:700px;padding:50px"><svg viewBox="0 0 300 300" width="100%">
+        <defs>
+          <path id="arc-top" d="M40,150 A110,110 0 0 1 260,150"/>
+          <path id="arc-bot" d="M28,150 A122,122 0 0 0 272,150"/>
+        </defs>
+        <circle cx="150" cy="150" r="140" fill="url(#g-em)"/>
+        <circle cx="150" cy="150" r="132" fill="none" stroke="url(#g-gold)" stroke-width="3"/>
+        <circle cx="150" cy="150" r="92" fill="none" stroke="url(#g-gold)" stroke-width="1.5"/>
+        <text font-family="Cinzel" font-weight="700" font-size="17" letter-spacing="3.2" fill="#e8d48b" direction="ltr"><textPath href="#arc-top" startOffset="50%" text-anchor="middle">MORCHID ATAOUAF TRAVEL</textPath></text>
+        <text font-family="Cinzel" font-weight="700" font-size="13" letter-spacing="4" fill="#e8d48b" direction="ltr"><textPath href="#arc-bot" startOffset="50%" text-anchor="middle">TANGER · MAROC</textPath></text>
+        <circle cx="34" cy="150" r="3.5" fill="#c9a227"/><circle cx="266" cy="150" r="3.5" fill="#c9a227"/>
+        <g transform="translate(150,128) scale(.9) translate(-100,-104)">
+          <use href="#orbit-back"/><use href="#kaaba"/><use href="#orbit-front"/>
+        </g>
+        <text x="150" y="196" text-anchor="middle" font-family="Amiri" font-weight="700" font-size="30" fill="url(#g-gold)">مرشد الطواف</text>
+        <text x="150" y="216" text-anchor="middle" font-family="Cairo" font-weight="600" font-size="9.5" fill="#e8d48b">للأسفار والسياحة والحج والعمرة</text>
+      </svg></div>
+      <div class="tile dark" style="height:700px;padding:60px"><svg viewBox="0 0 300 300" width="280">
+        <defs>
+          <path id="arc-top2" d="M40,150 A110,110 0 0 1 260,150"/>
+          <path id="arc-bot2" d="M28,150 A122,122 0 0 0 272,150"/>
+        </defs>
+        <circle cx="150" cy="150" r="140" fill="#f8f3e3"/>
+        <circle cx="150" cy="150" r="132" fill="none" stroke="url(#g-gold)" stroke-width="3"/>
+        <circle cx="150" cy="150" r="92" fill="none" stroke="#064e3b" stroke-width="1.5"/>
+        <text font-family="Cinzel" font-weight="700" font-size="17" letter-spacing="3.2" fill="#064e3b" direction="ltr"><textPath href="#arc-top2" startOffset="50%" text-anchor="middle">MORCHID ATAOUAF TRAVEL</textPath></text>
+        <text font-family="Cinzel" font-weight="700" font-size="13" letter-spacing="4" fill="#a8841c" direction="ltr"><textPath href="#arc-bot2" startOffset="50%" text-anchor="middle">TANGER · MAROC</textPath></text>
+        <circle cx="34" cy="150" r="3.5" fill="#c9a227"/><circle cx="266" cy="150" r="3.5" fill="#c9a227"/>
+        <g transform="translate(150,128) scale(.9) translate(-100,-104)">
+          <use href="#orbit-back"/><use href="#kaaba"/><use href="#orbit-front"/>
+        </g>
+        <text x="150" y="196" text-anchor="middle" font-family="Amiri" font-weight="700" font-size="30" fill="#064e3b">مرشد الطواف</text>
+        <text x="150" y="216" text-anchor="middle" font-family="Cairo" font-weight="600" font-size="9.5" fill="#a8841c">للأسفار والسياحة والحج والعمرة</text>
+      </svg></div>
+    </div>
+  </div></body></html>

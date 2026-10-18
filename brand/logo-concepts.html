@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>مرشد الطواف — Logo Concepts</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700;800&family=Cinzel:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+  :root { --em:#064e3b; --em2:#0b6b51; --deep:#042f22; --gold:#c9a227; --gold-l:#e8d48b; --ink:#0a1612; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#f4f1e8; font-family:Cairo, sans-serif; color:var(--ink); }
+  header { padding:40px 24px 8px; text-align:center; }
+  header h1 { font-family:Amiri, serif; font-size:34px; margin:0; color:var(--em); }
+  header p { margin:6px 0 0; color:#5b6b64; }
+  .concept { max-width:1100px; margin:32px auto; padding:0 16px; }
+  .concept h2 { font-size:20px; margin:0 0 4px; color:var(--em); }
+  .concept .why { margin:0 0 14px; color:#5b6b64; font-size:14px; line-height:1.8; }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .tile { border-radius:22px; min-height:300px; display:flex; align-items:center; justify-content:center; padding:28px; }
+  .light { background:#fff; box-shadow:0 1px 0 rgba(0,0,0,.05), 0 10px 30px rgba(6,78,59,.08); }
+  .dark { background:radial-gradient(120% 120% at 70% 0%, #0b6b51 0%, #064e3b 45%, #042f22 100%); }
+  .icons { display:flex; gap:14px; align-items:center; justify-content:center; margin-top:14px; }
+  .icons span { font-size:12px; color:#5b6b64; }
+  svg { max-width:100%; height:auto; direction:ltr; }
+  @media (max-width:760px){ .row{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>مرشد الطواف للأسفار والسياحة والحج والعمرة</h1>
+  <p>ثلاثة مقترحات للشعار — MORCHID ATAOUAF TRAVEL</p>
+</header>
+
+<!-- Shared symbols -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <linearGradient id="g-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3e3a1"/>
+      <stop offset=".45" stop-color="#d9b44a"/>
+      <stop offset="1" stop-color="#a8841c"/>
+    </linearGradient>
+    <linearGradient id="g-em" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d7a5c"/>
+      <stop offset="1" stop-color="#053d2e"/>
+    </linearGradient>
+
+    <!-- Kaaba cube with gold kiswa band -->
+    <g id="kaaba">
+      <polygon points="100,72 128,86 100,100 72,86" fill="#1f2b27"/>
+      <polygon points="72,86 100,100 100,132 72,118" fill="#0b1210"/>
+      <polygon points="100,100 128,86 128,118 100,132" fill="#141d1a"/>
+      <polygon points="72,92 100,106 100,111 72,97" fill="url(#g-gold)"/>
+      <polygon points="100,106 128,92 128,97 100,111" fill="url(#g-gold)"/>
+      <polygon points="110,112 118,108 118,121 110,125" fill="url(#g-gold)" opacity=".9"/>
+    </g>
+
+    <!-- Tawaf orbit: back half (drawn behind) and front half with arrow -->
+    <g id="orbit-back">
+      <path d="M52,120 A48,16 0 0 1 148,120" fill="none" stroke="url(#g-gold)" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+    </g>
+    <g id="orbit-front">
+      <path d="M52,120 A48,16 0 0 0 140,128" fill="none" stroke="url(#g-gold)" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M133,122 L146,125 L137,135" fill="none" stroke="url(#g-gold)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Concept 1 emblem: 8-point star + kaaba + orbit -->
+    <g id="emblem">
+      <polygon points="100,12 188,100 100,188 12,100" fill="url(#g-em)"/>
+      <rect x="38" y="38" width="124" height="124" fill="url(#g-em)"/>
+      <polygon points="100,12 188,100 100,188 12,100" fill="none" stroke="url(#g-gold)" stroke-width="3"/>
+      <rect x="38" y="38" width="124" height="124" fill="none" stroke="url(#g-gold)" stroke-width="3"/>
+      <circle cx="100" cy="100" r="66" fill="none" stroke="url(#g-gold)" stroke-width="1" opacity=".45"/>
+      <use href="#orbit-back"/>
+      <use href="#kaaba"/>
+      <use href="#orbit-front"/>
+      <!-- crescent above -->
+      <path d="M100,40 a11,11 0 1 0 9,17 a9,9 0 1 1 -9,-17z" fill="url(#g-gold)"/>
+    </g>
+  </defs>
+</svg>
+
+<!-- ========== Concept 1 ========== -->
+<section class="concept">
+  <h2>1 · النجمة والطواف (Emblem + Wordmark)</h2>
+  <p class="why">نجمة ثمانية مغربية إسلامية، في وسطها الكعبة المشرفة يحيط بها مدار الطواف بسهم في اتجاه الطواف — ترجمة مباشرة لاسم «مرشد الطواف». يُستعمل الرمز وحده كأيقونة للموقع وواتساب وفيسبوك.</p>
+  <div class="row">
+    <div class="tile light">
+      <svg viewBox="0 0 620 200" width="560">
+        <use href="#emblem" x="420" y="0"/>
+        <text x="400" y="92" text-anchor="end" font-family="Amiri" font-weight="700" font-size="58" fill="#064e3b">مرشد الطواف</text>
+        <text x="400" y="128" text-anchor="end" font-family="Cairo" font-weight="600" font-size="17" fill="#a8841c">للأسفار والسياحة والحج والعمرة</text>
+        <line x1="400" y1="144" x2="40" y2="144" stroke="#c9a227" stroke-width="1.2" opacity=".6"/>
+        <text x="400" y="170" text-anchor="end" font-family="Cinzel" font-weight="700" font-size="17" letter-spacing="4" fill="#064e3b" direction="ltr">MORCHID ATAOUAF TRAVEL</text>
+      </svg>
+    </div>
+    <div class="tile dark">
+      <svg viewBox="0 0 300 330" width="260">
+        <use href="#emblem" x="50" y="0"/>
+        <text x="150" y="250" text-anchor="middle" font-family="Amiri" font-weight="700" font-size="44" fill="url(#g-gold)">مرشد الطواف</text>
+        <text x="150" y="279" text-anchor="middle" font-family="Cairo" font-weight="600" font-size="13" fill="#e8d48b">للأسفار والسياحة والحج والعمرة</text>
+        <text x="150" y="309" text-anchor="middle" font-family="Cinzel" font-weight="700" font-size="12.5" letter-spacing="3" fill="#ffffff" opacity=".9" direction="ltr">MORCHID ATAOUAF TRAVEL</text>
+      </svg>
+    </div>
+  </div>
+  <div class="icons">
+    <svg viewBox="0 0 200 200" width="64"><use href="#emblem"/></svg>
+    <svg viewBox="0 0 200 200" width="40"><use href="#emblem"/></svg>
+    <svg viewBox="0 0 200 200" width="24"><use href="#emblem"/></svg>
+    <span>أحجام الأيقونة</span>
+  </div>
+</section>
+
+<!-- ========== Concept 2 ========== -->
+<section class="concept">
+  <h2>2 · القوس المغربي (Arch Monogram)</h2>
+  <p class="why">باب على شكل قوس مغربي أصيل، داخله حرف «م» من «مرشد» بخط عربي، يعلوه هلال، وطائرة صغيرة تمرّ عبر مسار منقّط ترمز للسفر والسياحة. شكل عمودي أنيق يصلح للافتة الوكالة والختم.</p>
+  <div class="row">
+    <div class="tile light">
+      <svg viewBox="0 0 600 220" width="560">
+        <g transform="translate(410,8)">
+          <path d="M20,200 V95 Q20,40 85,10 Q150,40 150,95 V200 Z" fill="url(#g-em)"/>
+          <path d="M32,192 V97 Q32,52 85,24 Q138,52 138,97 V192 Z" fill="none" stroke="url(#g-gold)" stroke-width="2.5"/>
+          <path d="M85,44 a9,9 0 1 0 7,14 a7.4,7.4 0 1 1 -7,-14z" fill="url(#g-gold)"/>
+          <text x="85" y="128" text-anchor="middle" font-family="Amiri" font-weight="700" font-size="88" fill="url(#g-gold)">م</text>
+          <path d="M-10,170 Q60,120 170,128" fill="none" stroke="#c9a227" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+          <g transform="translate(176,124) rotate(8)">
+            <path d="M0,0 L-16,-4 L-22,-14 L-26,-13 L-22,-3 L-34,-2 L-38,-7 L-41,-6 L-38,0 L-41,6 L-38,7 L-34,2 L-22,3 L-26,13 L-22,14 L-16,4 Z" fill="#064e3b"/>
+          </g>
+        </g>
+        <text x="385" y="96" text-anchor="end" font-family="Amiri" font-weight="700" font-size="56" fill="#064e3b">مرشد الطواف</text>
+        <text x="385" y="132" text-anchor="end" font-family="Cairo" font-weight="600" font-size="17" fill="#a8841c">للأسفار والسياحة والحج والعمرة</text>
+        <text x="385" y="172" text-anchor="end" font-family="Cinzel" font-weight="700" font-size="16" letter-spacing="4" fill="#064e3b" direction="ltr">MORCHID ATAOUAF TRAVEL</text>
+      </svg>
+    </div>
+    <div class="tile dark">
+      <svg viewBox="0 0 300 340" width="250">
+        <g transform="translate(65,0)">
+          <path d="M20,200 V95 Q20,40 85,10 Q150,40 150,95 V200 Z" fill="#042f22" stroke="url(#g-gold)" stroke-width="3"/>
+          <path d="M32,192 V97 Q32,52 85,24 Q138,52 138,97 V192 Z" fill="none" stroke="url(#g-gold)" stroke-width="1.2" opacity=".6"/>
+          <path d="M85,44 a9,9 0 1 0 7,14 a7.4,7.4 0 1 1 -7,-14z" fill="url(#g-gold)"/>
+          <text x="85" y="128" text-anchor="middle" font-family="Amiri" font-weight="700" font-size="88" fill="url(#g-gold)">م</text>
+        </g>
+        <text x="150" y="262" text-anchor="middle" font-family="Amiri" font-weight="700" font-size="42" fill="url(#g-gold)">مرشد الطواف</text>
+        <text x="150" y="290" text-anchor="middle" font-family="Cairo" font-weight="600" font-size="13" fill="#e8d48b">للأسفار والسياحة والحج والعمرة</text>
+        <text x="150" y="320" text-anchor="middle" font-family="Cinzel" font-weight="700" font-size="12.5" letter-spacing="3" fill="#fff" opacity=".9" direction="ltr">MORCHID ATAOUAF TRAVEL</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ========== Concept 3 ========== -->
+<section class="concept">
+  <h2>3 · الختم الدائري (Seal / Badge)</h2>
+  <p class="why">ختم دائري فاخر بحلقتين ذهبيتين، الاسم الفرنسي يدور في الأعلى و«TANGER · MAROC» في الأسفل، وفي القلب الكعبة ومدار الطواف والاسم العربي. مثالي لصورة الملف الشخصي في فيسبوك وإنستغرام وواتساب، والمطبوعات والتذاكر.</p>
+  <div class="row">
+    <div class="tile light">
+      <svg viewBox="0 0 300 300" width="280">
+        <defs>
+          <path id="arc-top" d="M40,150 A110,110 0 0 1 260,150"/>
+          <path id="arc-bot" d="M28,150 A122,122 0 0 0 272,150"/>
+        </defs>
+        <circle cx="150" cy="150" r="140" fill="url(#g-em)"/>
+        <circle cx="150" cy="150" r="132" fill="none" stroke="url(#g-gold)" stroke-width="3"/>
+        <circle cx="150" cy="150" r="92" fill="none" stroke="url(#g-gold)" stroke-width="1.5"/>
+        <text font-family="Cinzel" font-weight="700" font-size="17" letter-spacing="3.2" fill="#e8d48b" direction="ltr"><textPath href="#arc-top" startOffset="50%" text-anchor="middle">MORCHID ATAOUAF TRAVEL</textPath></text>
+        <text font-family="Cinzel" font-weight="700" font-size="13" letter-spacing="4" fill="#e8d48b" direction="ltr"><textPath href="#arc-bot" startOffset="50%" text-anchor="middle">TANGER · MAROC</textPath></text>
+        <circle cx="34" cy="150" r="3.5" fill="#c9a227"/><circle cx="266" cy="150" r="3.5" fill="#c9a227"/>
+        <g transform="translate(150,128) scale(.9) translate(-100,-104)">
+          <use href="#orbit-back"/><use href="#kaaba"/><use href="#orbit-front"/>
+        </g>
+        <text x="150" y="196" text-anchor="middle" font-family="Amiri" font-weight="700" font-size="30" fill="url(#g-gold)">مرشد الطواف</text>
+        <text x="150" y="216" text-anchor="middle" font-family="Cairo" font-weight="600" font-size="9.5" fill="#e8d48b">للأسفار والسياحة والحج والعمرة</text>
+      </svg>
+    </div>
+    <div class="tile dark">
+      <svg viewBox="0 0 300 300" width="280">
+        <defs>
+          <path id="arc-top2" d="M40,150 A110,110 0 0 1 260,150"/>
+          <path id="arc-bot2" d="M28,150 A122,122 0 0 0 272,150"/>
+        </defs>
+        <circle cx="150" cy="150" r="140" fill="#f8f3e3"/>
+        <circle cx="150" cy="150" r="132" fill="none" stroke="url(#g-gold)" stroke-width="3"/>
+        <circle cx="150" cy="150" r="92" fill="none" stroke="#064e3b" stroke-width="1.5"/>
+        <text font-family="Cinzel" font-weight="700" font-size="17" letter-spacing="3.2" fill="#064e3b" direction="ltr"><textPath href="#arc-top2" startOffset="50%" text-anchor="middle">MORCHID ATAOUAF TRAVEL</textPath></text>
+        <text font-family="Cinzel" font-weight="700" font-size="13" letter-spacing="4" fill="#a8841c" direction="ltr"><textPath href="#arc-bot2" startOffset="50%" text-anchor="middle">TANGER · MAROC</textPath></text>
+        <circle cx="34" cy="150" r="3.5" fill="#c9a227"/><circle cx="266" cy="150" r="3.5" fill="#c9a227"/>
+        <g transform="translate(150,128) scale(.9) translate(-100,-104)">
+          <use href="#orbit-back"/><use href="#kaaba"/><use href="#orbit-front"/>
+        </g>
+        <text x="150" y="196" text-anchor="middle" font-family="Amiri" font-weight="700" font-size="30" fill="#064e3b">مرشد الطواف</text>
+        <text x="150" y="216" text-anchor="middle" font-family="Cairo" font-weight="600" font-size="9.5" fill="#a8841c">للأسفار والسياحة والحج والعمرة</text>
+      </svg>
+    </div>
+  </div>
+</section>
+<div style="height:40px"></div>
+</body>
+</html>

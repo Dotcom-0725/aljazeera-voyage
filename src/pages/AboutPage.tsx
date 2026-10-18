@@ -69,7 +69,7 @@ export default function AboutPage() {
               <div className="relative overflow-hidden rounded-[1.75rem] shadow-luxury">
                 <OptimizedImage
                   src={IMAGES.mosque}
-                  alt="وكالة الجزيرة ترافيل بطنجة — تجربة سفر فاخرة"
+                  alt="وكالة مرشد الطواف للأسفار بطنجة — تجربة سفر فاخرة"
                   className="aspect-[5/6] w-full"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#064e3b]/70 via-transparent to-transparent" />
@@ -95,14 +95,25 @@ export default function AboutPage() {
               <SectionHeader
                 align="start"
                 badge="قصتنا"
-                title="وكالة الحج والعمرة والسياحة في طنجة"
-                subtitle="نؤمن أن رحلة العمرة أو الحج ليست مجرد سفر، بل تجربة روحية تستحق العناية الفائقة."
+                title={SITE.name}
+                subtitle={SITE.nameFr}
               />
-              <p className="mb-6 text-[15px] leading-8 text-muted-foreground">
-                من مقرنا بدوار النجمة بطنجة، نخدم العائلات المغربية ببرامج عمرة وحج
-                وسياحة مصممة بعناية. يشرف على التواصل والمتابعة السيد{" "}
-                <strong className="text-foreground">{SITE.contactPerson}</strong>{" "}
-                وفريق متخصص يحرص على راحتكم من لحظة الاستفسار حتى العودة بسلام.
+              {SITE.about.map((paragraph) => (
+                <p
+                  key={paragraph}
+                  className="mb-4 text-[15px] leading-8 text-muted-foreground"
+                >
+                  {paragraph}
+                </p>
+              ))}
+              <p className="mb-4 text-[15px] leading-8 text-muted-foreground">
+                المسؤول:{" "}
+                <strong className="text-foreground">
+                  {SITE.contactTitle} {SITE.contactPerson}
+                </strong>
+              </p>
+              <p className="mb-6 font-display text-lg font-bold leading-8 text-gold">
+                {SITE.slogan}
               </p>
               <div className="grid gap-4 sm:grid-cols-3">
                 {values.map((item) => (
@@ -146,7 +157,7 @@ export default function AboutPage() {
           { to: "/umrah", label: "برامج العمرة", desc: "وكالة عمرة طنجة" },
           { to: "/hajj", label: "برامج الحج", desc: "الحج المغرب" },
           { to: "/tours", label: "الرحلات السياحية", desc: "تركيا ودبي والمزيد" },
-          { to: "/contact", label: "تواصل معنا", desc: "0671872273" },
+          { to: "/contact", label: "تواصل معنا", desc: "0671872273 · 0614385559" },
         ]}
       />
 

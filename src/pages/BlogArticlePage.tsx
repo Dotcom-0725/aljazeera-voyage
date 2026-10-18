@@ -26,7 +26,7 @@ export default function BlogArticlePage() {
   useSeo(
     article
       ? {
-          title: `${article.title} | وكالة الجزيرة ترافيل`,
+          title: `${article.title} | وكالة مرشد الطواف للأسفار`,
           description: article.description,
           keywords: article.keywords,
           path: `/blog/${article.slug}`,
@@ -51,7 +51,7 @@ export default function BlogArticlePage() {
         }
       : {
           ...SEO_PAGES.blog,
-          title: "مقال غير موجود | وكالة الجزيرة ترافيل",
+          title: "مقال غير موجود | وكالة مرشد الطواف للأسفار",
           noindex: true,
         }
   );

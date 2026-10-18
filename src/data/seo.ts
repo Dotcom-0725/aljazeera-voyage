@@ -1,6 +1,6 @@
 import { SITE } from "./site";
 
-export const SITE_URL = "https://aljazeera-travel.ma";
+export const SITE_URL = "https://aljazeera-voyage.vercel.app";
 export const DEFAULT_OG_IMAGE =
   "https://images.pexels.com/photos/35446836/pexels-photo-35446836.jpeg?auto=compress&cs=tinysrgb&w=1200";
 
@@ -25,18 +25,18 @@ export type SeoConfig = {
 export const SEO_PAGES: Record<string, SeoConfig> = {
   home: {
     path: "/",
-    title: "وكالة أسفار طنجة | وكالة الجزيرة ترافيل — عمرة حج سياحة",
+    title: "مرشد الطواف للأسفار والسياحة والحج والعمرة | MORCHID ATAOUAF TRAVEL — طنجة",
     description:
-      "وكالة أسفار طنجة متخصصة في العمرة والحج ورحلات تركيا ودبي وحجز الطيران واستخراج التأشيرات. وكالة الجزيرة ترافيل بدوار النجمة — اتصل 0671872273.",
+      "وكالة أسفار طنجة متخصصة في العمرة والحج ورحلات تركيا ودبي وحجز الطيران واستخراج التأشيرات. وكالة مرشد الطواف للأسفار — البرانص 2، طنجة — اتصل 0671872273 / 0614385559.",
     keywords:
       "وكالة أسفار طنجة, وكالة عمرة طنجة, رحلات العمرة المغرب, الحج المغرب, وكالة سفر المغرب, وكالة الحج والعمرة, حجز تذاكر الطيران طنجة, استخراج التأشيرات طنجة",
   },
   about: {
     path: "/about",
-    title: "من نحن | وكالة أسفار طنجة — وكالة الجزيرة ترافيل",
+    title: "من نحن | وكالة أسفار طنجة — وكالة مرشد الطواف للأسفار",
     description:
-      "تعرف على وكالة الجزيرة ترافيل بطنجة: خبرة موثوقة في تنظيم العمرة والحج والرحلات السياحية للعائلات المغربية. دوار النجمة — محمد عثمان.",
-    keywords: "وكالة أسفار طنجة, وكالة سفر المغرب, من نحن وكالة سفر طنجة, الجزيرة ترافيل",
+      "تعرف على وكالة مرشد الطواف للأسفار بطنجة: خبرة موثوقة في تنظيم العمرة والحج والرحلات السياحية للعائلات المغربية. البرانص 2، طنجة — الأستاذ محمد عثمان بروحو الحجام.",
+    keywords: "وكالة أسفار طنجة, وكالة سفر المغرب, من نحن وكالة سفر طنجة, مرشد الطواف",
   },
   umrah: {
     path: "/umrah",
@@ -50,7 +50,7 @@ export const SEO_PAGES: Record<string, SeoConfig> = {
     path: "/hajj",
     title: "الحج المغرب 2026 | برامج حج من طنجة — وكالة معتمدة",
     description:
-      "برامج الحج من المغرب بطنجة: إقامة مريحة، مخيمات مميزة، إشراف ميداني ومتابعة للعائلات. سجّل مبكراً — وكالة الجزيرة ترافيل.",
+      "برامج الحج من المغرب بطنجة: إقامة مريحة، مخيمات مميزة، إشراف ميداني ومتابعة للعائلات. سجّل مبكراً — وكالة مرشد الطواف للأسفار.",
     keywords: "الحج المغرب, وكالة الحج والعمرة, حج من طنجة, برامج الحج المغرب 2026",
   },
   tours: {
@@ -65,7 +65,7 @@ export const SEO_PAGES: Record<string, SeoConfig> = {
     path: "/flights",
     title: "حجز تذاكر الطيران طنجة | أفضل عروض الطيران",
     description:
-      "حجز تذاكر الطيران من طنجة والدار البيضاء إلى جدة والمدينة وإسطنبول ودبي. عروض سريعة عبر واتساب — وكالة الجزيرة ترافيل.",
+      "حجز تذاكر الطيران من طنجة والدار البيضاء إلى جدة والمدينة وإسطنبول ودبي. عروض سريعة عبر واتساب — وكالة مرشد الطواف للأسفار.",
     keywords:
       "حجز تذاكر الطيران طنجة, تذاكر طيران المغرب, طيران طنجة جدة, طيران طنجة إسطنبول",
   },
@@ -81,21 +81,21 @@ export const SEO_PAGES: Record<string, SeoConfig> = {
     path: "/blog",
     title: "مدونة السفر والعمرة | نصائح الحج والسياحة من طنجة",
     description:
-      "مقالات SEO عن العمرة والحج ورحلات تركيا ودبي والتأشيرات ونصائح السفر للمغاربة من وكالة الجزيرة ترافيل بطنجة.",
+      "مقالات SEO عن العمرة والحج ورحلات تركيا ودبي والتأشيرات ونصائح السفر للمغاربة من وكالة مرشد الطواف للأسفار بطنجة.",
     keywords: "مدونة عمرة, نصائح الحج, رحلات تركيا, تأشيرات المغرب, سفر من طنجة",
   },
   contact: {
     path: "/contact",
-    title: "اتصل بنا | وكالة أسفار طنجة — دوار النجمة 0671872273",
+    title: "اتصل بنا | مرشد الطواف للأسفار — البرانص 2، طنجة — 0671872273",
     description:
-      "تواصل مع وكالة الجزيرة ترافيل بدوار النجمة طنجة. هاتف وواتساب 0671872273 — المسؤول محمد عثمان. خريطة، أوقات العمل ونموذج تواصل.",
-    keywords: "وكالة أسفار طنجة رقم الهاتف, دوار النجمة طنجة, تواصل وكالة سفر طنجة",
+      "تواصل مع وكالة مرشد الطواف للأسفار بالبرانص 2، زنقة 24، طنجة. هاتف وواتساب 0671872273 — هاتف 0614385559 — المسؤول الأستاذ محمد عثمان بروحو الحجام. خريطة، أوقات العمل ونموذج تواصل.",
+    keywords: "وكالة أسفار طنجة رقم الهاتف, البرانص 2 طنجة, تواصل وكالة سفر طنجة",
   },
   turkey: {
     path: "/destinations/turkey",
     title: "رحلات تركيا من المغرب | إسطنبول من طنجة 2026",
     description:
-      "رحلات تركيا من المغرب بأسعار تنافسية: إسطنبول 7 أيام مع فنادق 4–5 نجوم، مرشد عربي وطيران. احجز من طنجة عبر وكالة الجزيرة ترافيل.",
+      "رحلات تركيا من المغرب بأسعار تنافسية: إسطنبول 7 أيام مع فنادق 4–5 نجوم، مرشد عربي وطيران. احجز من طنجة عبر وكالة مرشد الطواف للأسفار.",
     keywords: "رحلات تركيا من المغرب, رحلة إسطنبول من طنجة, سياحة تركيا للمغاربة",
     ogImage:
       "https://images.pexels.com/photos/11956061/pexels-photo-11956061.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -113,7 +113,7 @@ export const SEO_PAGES: Record<string, SeoConfig> = {
     path: "/destinations/paris",
     title: "رحلة باريس من المغرب | برامج سياحية أنيقة",
     description:
-      "اكتشف باريس مع وكالة الجزيرة ترافيل: برج إيفل، اللوفر، إقامة مركزية ومساعدة في التأشيرة من طنجة.",
+      "اكتشف باريس مع وكالة مرشد الطواف للأسفار: برج إيفل، اللوفر، إقامة مركزية ومساعدة في التأشيرة من طنجة.",
     keywords: "رحلة باريس من المغرب, سياحة فرنسا للمغاربة, تأشيرة فرنسا طنجة",
     ogImage:
       "https://images.pexels.com/photos/29667766/pexels-photo-29667766.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -141,19 +141,18 @@ export function buildOrganizationSchema() {
     "@type": ["TravelAgency", "LocalBusiness", "Organization"],
     "@id": `${SITE_URL}/#organization`,
     name: SITE.name,
-    alternateName: ["الجزيرة ترافيل", "Al Jazeera Travel Tangier"],
+    alternateName: [SITE.shortName, SITE.nameFr],
     description: SEO_PAGES.home.description,
     url: SITE_URL,
-    logo: `${SITE_URL}/favicon.svg`,
+    logo: `${SITE_URL}/logo.png`,
     image: DEFAULT_OG_IMAGE,
-    telephone: `+${SITE.phoneIntl}`,
-    email: SITE.email,
+    telephone: [`+${SITE.phoneIntl}`, `+${SITE.phone2Intl}`],
     priceRange: "$$",
     currenciesAccepted: "MAD",
     paymentAccepted: "Cash, Bank Transfer",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "دوار النجمة",
+      streetAddress: "البرانص 2، زنقة 24",
       addressLocality: "طنجة",
       addressRegion: "طنجة تطوان الحسيمة",
       addressCountry: "MA",
@@ -275,7 +274,7 @@ export function buildArticleSchema(article: {
       name: SITE.name,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/favicon.svg`,
+        url: `${SITE_URL}/logo.png`,
       },
     },
     mainEntityOfPage: absoluteUrl(article.path),

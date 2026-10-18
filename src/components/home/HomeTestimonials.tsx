@@ -14,7 +14,7 @@ export function HomeTestimonials() {
           light
           badge="آراء عملائنا"
           title="ثقة العائلات المغربية مصدر فخرنا"
-          subtitle="قصص حقيقية من حجاج ومعتمرين ومسافرين اختاروا وكالة الجزيرة ترافيل."
+          subtitle="قصص حقيقية من حجاج ومعتمرين ومسافرين اختاروا وكالة مرشد الطواف للأسفار."
         />
 
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">

@@ -126,7 +126,7 @@ export default function HomePage() {
           {
             to: "/contact",
             label: "اتصل بوكالة أسفار طنجة",
-            desc: "دوار النجمة · 0671872273",
+            desc: "البرانص 2، طنجة · 0671872273",
           },
         ]}
       />

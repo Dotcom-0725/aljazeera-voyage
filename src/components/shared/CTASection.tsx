@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 
 export function CTASection({
   title = "جاهزون لتنظيم رحلتكم بكل راحة؟",
-  subtitle = "فريق وكالة الجزيرة ترافيل بانتظاركم لاستشارة مجانية واختيار البرنامج الأنسب لكم.",
+  subtitle = "فريق وكالة مرشد الطواف للأسفار بانتظاركم لاستشارة مجانية واختيار البرنامج الأنسب لكم.",
 }: {
   title?: string;
   subtitle?: string;
@@ -42,7 +42,7 @@ export function CTASection({
             </div>
             <a
               href={whatsappLink(
-                "السلام عليكم، أرغب في استشارة مجانية لحجز رحلتي مع وكالة الجزيرة ترافيل"
+                "السلام عليكم، أرغب في استشارة مجانية لحجز رحلتي مع وكالة مرشد الطواف للأسفار"
               )}
               target="_blank"
               rel="noopener noreferrer"
