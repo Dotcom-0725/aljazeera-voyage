@@ -78,7 +78,7 @@ export function PackageCard({ pkg, index = 0 }: Props) {
           <div className="mt-auto border-t border-border pt-5">
             <div className="mb-4">
               <div className="text-xs font-semibold text-muted-foreground">
-                السعر يبدأ من
+                ابتداءً من
               </div>
               <div className="text-xl font-extrabold text-emerald-deep">
                 {pkg.price}

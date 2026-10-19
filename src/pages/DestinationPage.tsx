@@ -91,7 +91,7 @@ export default function DestinationPage() {
                 </Badge>
                 <Badge variant="soft">
                   <Wallet className="h-3.5 w-3.5" />
-                  من {destination.priceFrom}
+                  ابتداءً من {destination.priceFrom}
                 </Badge>
               </div>
 
@@ -171,7 +171,7 @@ export default function DestinationPage() {
             <aside className="lg:col-span-4">
               <Card className="sticky top-28 overflow-hidden border-primary/15 p-0 shadow-luxury">
                 <div className="bg-emerald-gradient p-6 text-white">
-                  <div className="text-sm text-white/75">يبدأ السعر من</div>
+                  <div className="text-sm text-white/75">ابتداءً من</div>
                   <div className="font-display text-3xl font-bold text-gold-light">
                     {destination.priceFrom}
                   </div>

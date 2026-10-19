@@ -84,7 +84,7 @@ export default function HomePage() {
                       {d.summary}
                     </p>
                     <div className="mt-3 text-sm font-extrabold text-primary">
-                      من {d.priceFrom}
+                      ابتداءً من {d.priceFrom}
                     </div>
                   </div>
                 </Card>
@@ -120,7 +120,7 @@ export default function HomePage() {
           {
             to: "/destinations/dubai",
             label: "رحلات دبي من المغرب",
-            desc: "برامج 5 أيام",
+            desc: "برامج 8 أيام",
           },
           {
             to: "/flights",

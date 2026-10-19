@@ -53,7 +53,7 @@ export default function ToursPage() {
           <SectionHeader
             badge="وجهات خارج المغرب"
             title="هبوط عالي التحويل لكل وجهة"
-            subtitle="صفحات مُحسّنة لكلمات: رحلات تركيا من المغرب ورحلات دبي من المغرب."
+            subtitle="صفحات مُحسّنة لكلمات: رحلات تركيا ودبي ومصر وإسبانيا من المغرب."
           />
           <div className="mb-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {DESTINATIONS.map((d) => (
@@ -71,7 +71,7 @@ export default function ToursPage() {
                       <div className="text-xs text-gold-light">{d.country}</div>
                       <h3 className="font-display text-xl font-bold">{d.name}</h3>
                       <div className="mt-1 text-sm font-bold text-gold-light">
-                        من {d.priceFrom}
+                        ابتداءً من {d.priceFrom}
                       </div>
                     </div>
                   </div>

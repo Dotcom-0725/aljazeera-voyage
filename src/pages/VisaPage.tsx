@@ -170,7 +170,7 @@ export default function VisaPage() {
         items={[
           { to: "/blog/visa-tips-morocco", label: "نصائح قبول التأشيرة" },
           { to: "/umrah", label: "تأشيرة العمرة" },
-          { to: "/destinations/paris", label: "تأشيرة فرنسا / باريس" },
+          { to: "/destinations/spain", label: "تأشيرة إسبانيا" },
           { to: "/contact", label: "مكتب طنجة" },
         ]}
       />
